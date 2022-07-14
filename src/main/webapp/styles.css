@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.auth-form-body {
+	padding: 50px 20px;
+	background-color: #b6e3ff;
+	border: 1px solid #33496a;
+	border-radius: 6px;
+	width: 250px;
+	height: 180px;
+	margin: 0 auto;
+}
+
+
+.reg-form-body {
+	padding: 50px 20px;
+	background-color: #b6e3ff;
+	border: 1px solid #33496a;
+	border-radius: 6px;
+	width: 250px;
+	height: 430px;
+	margin: 0 auto;
+}
+.form-header {
+		margin: 50px auto;
+		width: 250px;
+		height: 0px;
+	}
+
+.form-control {
+	width: 215px;
+	padding: 5px 10px;
+	line-height: 30px;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+
+.btn {
+	width: 240px;
+	height: 30px;
+	border: 1px solid #33496a;
+	border-radius: 6px;
+	background-color: #16db1d;
+	font-size: 16px;
+}
