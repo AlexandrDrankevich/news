@@ -17,5 +17,4 @@ public class ServiceProvider {
     public UserService getUserService() {
         return userService;
     }
-
 }

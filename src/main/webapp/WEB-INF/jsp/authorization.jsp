@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +14,8 @@
         <h1>Authorization </h1>
       </div>
 	<div class="auth-form-body">
-		<form action="Controller" method="post">
+		<h4><c:out value="${massage}"></c:out></h4>
+		<form action="controller" method="post">
 			<input type="hidden" name="command" value="do_authorization">
 			<div>
 				<label for="login_field">Email address </label> 

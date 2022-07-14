@@ -10,7 +10,7 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
 
-  <display-name>my-project</display-name>
+  <display-name>news</display-name>
   
   <servlet>
   	<servlet-name>Controller</servlet-name>
@@ -18,7 +18,7 @@
   </servlet>
   <servlet-mapping>
   	<servlet-name>Controller</servlet-name>
-  	<url-pattern>/Controller</url-pattern>
+  	<url-pattern>/controller</url-pattern>
   </servlet-mapping>
   
  </web-app>

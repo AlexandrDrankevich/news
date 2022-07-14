@@ -9,7 +9,7 @@
 </head>
 <body>
 <%
-response.sendRedirect("Controller?command=go_to_main_page");
+response.sendRedirect("controller?command=go_to_main_page");
 	%>
 </body>
 </html>

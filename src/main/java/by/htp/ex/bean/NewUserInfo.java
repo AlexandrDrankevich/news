@@ -1,13 +1,13 @@
 package by.htp.ex.bean;
 
-public class User {
+public class NewUserInfo {
 	private String name;
 	private String surname;
 	private String email;
 	private String password;
 	private String birthday;
 
-	public User(){}
+	public NewUserInfo(){}
 	
 	public String getBirthday() {
 		return birthday;

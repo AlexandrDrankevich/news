@@ -13,10 +13,10 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class DoAuthorization implements Command {
+    UserService service = ServiceProvider.getInstance().getUserService();
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        UserService service = ServiceProvider.getInstance().getUserService();
         String login = request.getParameter(RequestParameterName.LOGIN);
         String password = request.getParameter(RequestParameterName.PASSWORD);
         try {
@@ -24,11 +24,11 @@ public class DoAuthorization implements Command {
             if (result) {
                 request.getRequestDispatcher(JspPageName.AUTHORIZED_MAIN_PAGE).forward(request, response);
             } else {
-                response.getWriter().println("WRONG EMAIL OR PASSWORD");
+                request.setAttribute("massage","Incorrect login or password");
+                request.getRequestDispatcher(JspPageName.AUTHORIZATION_PAGE).forward(request, response);
             }
         } catch (ServiceException e) {
-            //stub
-
+            request.getRequestDispatcher(JspPageName.ERROR_PAGE).forward(request, response);
         }
     }
 }

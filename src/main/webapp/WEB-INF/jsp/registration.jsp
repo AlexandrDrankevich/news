@@ -12,7 +12,7 @@
 		<h1>Registration</h1>
 	</div>
 	<div class="reg-form-body">
-		<form action="Controller" method="post">
+		<form action="controller" method="post">
 			<input type="hidden" name="command" value="do_registration">
 			<div>
 				<label for="name">Name </label> <input type="text" name="name"

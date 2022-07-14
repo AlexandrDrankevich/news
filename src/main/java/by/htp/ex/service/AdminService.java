@@ -1,7 +1,7 @@
 package by.htp.ex.service;
 
-import by.htp.ex.bean.User;
+import by.htp.ex.bean.NewUserInfo;
 
 public interface AdminService {
-void block(User user);
+void block(NewUserInfo user);
 }

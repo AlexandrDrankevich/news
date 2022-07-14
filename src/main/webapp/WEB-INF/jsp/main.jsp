@@ -9,13 +9,13 @@
 </head>
 <body>
 	<div class="auth-form-body">
-		<form action="Controller" method="get">
+		<form action="controller" method="get">
 			<input type="hidden" name="command" value="go_to_registration_page" /> <label
 				for="registration">Registration</label> <input id="registration"
 				type="submit" value="Click it" class="btn" />
 		</form>
 		<br />
-		<form action="Controller" method="get">
+		<form action="controller" method="get">
 			<input type="hidden" name="command" value="go_to_authorization_page" /> <label
 				for="authorization">Authorization</label> <input id="authorization"
 				type="submit" value="Click it" class="btn" />
