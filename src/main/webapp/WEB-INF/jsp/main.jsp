@@ -8,7 +8,7 @@
 <title>Main page</title>
 </head>
 <body>
-	<div class="auth-form-body">
+	<div class="choose-form-body">
 		<form action="controller" method="get">
 			<input type="hidden" name="command" value="go_to_registration_page" /> <label
 				for="registration">Registration</label> <input id="registration"
