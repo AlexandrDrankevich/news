@@ -15,7 +15,7 @@
       </div>
 	<div class="auth-form-body">
 		<h4><c:out value="${massage}"></c:out></h4>
-		<form action="controller" method="post">
+				<form action="controller" method="post">
 			<input type="hidden" name="command" value="do_authorization">
 			<div>
 				<label for="login_field">Email address </label> 
