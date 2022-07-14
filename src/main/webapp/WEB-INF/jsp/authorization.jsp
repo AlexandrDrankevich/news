@@ -20,13 +20,13 @@
 			<div>
 				<label for="login_field">Email address </label> 
 				<input type="text" name="login" id="login_field" 
-				class="form-control" value=""/>
+				class="form-control" value="" required/>
 			</div>
 			<br />
 			<div>
 				<label for="password">Password</label> 
 				<input type="password" name="password" id="password" 
-				class="form-control" value="" />
+				class="form-control"  value=""  required/>
 			</div>
 			<br />
 			<div>
