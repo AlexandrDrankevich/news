@@ -29,6 +29,7 @@ public class DoRegistration implements Command {
             if (result) {
                 request.getRequestDispatcher(JspPageName.AUTHORIZATION_PAGE).forward(request, response);
             } else {
+                request.setAttribute("massage",request.getParameter("email")+" is already exist");
                 request.getRequestDispatcher(JspPageName.REGISTRATION_PAGE).forward(request, response);
             }
         } catch (ServiceException e) {

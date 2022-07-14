@@ -27,6 +27,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean registration(NewUserInfo user) throws ServiceException {
+        if(!userDataValidation.checkRegData(user)){
+            throw new ServiceException("invalid registration data");
+        }
         try {
             return userDao.registration(user);
         } catch (DaoException e) {
