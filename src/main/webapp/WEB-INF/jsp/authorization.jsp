@@ -19,7 +19,7 @@
 			<input type="hidden" name="command" value="do_authorization">
 			<div>
 				<label for="login_field">Email address </label>
-				<input type="text" name="login" id="login_field" 
+				<input type="text" name="login" id="login_field"
 				class="form-control" value="" required pattern="[a-z 0-9]+@[a-z]+.[a-z]{2}"/>
 			</div>
 			<br />

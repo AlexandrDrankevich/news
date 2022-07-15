@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class UserDataValidationImpl implements UserDataValidation {
     @Override
     public boolean checkAuthData(String login, String password) {
-        if(password.length()==0||login.length()==0){
+        if(password.isEmpty()||login.isEmpty()){
             return false;
         }
         if (Pattern.matches("[A-Z a-z 0-9]+", password)
@@ -24,7 +24,7 @@ public class UserDataValidationImpl implements UserDataValidation {
         String name=user.getName();
         String surname=user.getSurname();
         String birthday=user.getBirthday();
-        if(password.length()==0||email.length()==0||name.length()==0||surname.length()==0 ||birthday.length()==0){
+        if(password.isEmpty()||email.isEmpty()||name.isEmpty()||surname.isEmpty() ||birthday.isEmpty()){
             return false;
         }
         if (Pattern.matches("[A-Z a-z 0-9]+", password)

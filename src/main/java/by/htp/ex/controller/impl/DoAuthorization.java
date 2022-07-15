@@ -22,8 +22,11 @@ public class DoAuthorization implements Command {
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String login = request.getParameter(RequestParameterName.LOGIN);
         String password = request.getParameter(RequestParameterName.PASSWORD);
+        if(login==null||password==null){
+            request.getRequestDispatcher(JspPageName.ERROR_PAGE).forward(request, response);
+        }
         try {
-            boolean result = service.authorization(login, password);
+                      boolean result = service.authorization(login, password);
             if (result) {
                 request.getRequestDispatcher(JspPageName.AUTHORIZED_MAIN_PAGE).forward(request, response);
             } else {
